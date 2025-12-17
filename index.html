@@ -1927,7 +1927,7 @@
             <li><a href="javascript:void(0)" onclick="navigateToCategory('femme')">Parfums femme</a></li>
             <li><a href="javascript:void(0)" onclick="navigateToCategory('homme')">Parfums homme</a></li>
             <li><a href="javascript:void(0)" onclick="navigateToCategory('arabes')">Parfum arabes</a></li>
-            <li><a href="javascript:void(0)" onclick="navigateToCategory('niches')">Parfum de niche</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateToCategory('niche')">Parfum de niche</a></li>
             <li><a href="blog.html">Blog</a></li>
             
             <li><a href="nouveautés.html" id="mobile-nouveautes">Nouveautés </a></li> 
@@ -2051,7 +2051,7 @@
                         <p class="category-description">Des fragrances orientales riches en oud et en notes épicées</p>
                     </div>
                 </div>
-                <div class="category-card" data-category="niches" onclick="navigateToCategory('niches')">
+                <div class="category-card" data-category="niche" onclick="navigateToCategory('niche')">
                     <div class="category-image" style="background-image: url('niche.jpeg');">
                         <div class="category-overlay">
                             <div class="category-link">Voir plus</div>
@@ -2247,7 +2247,7 @@ function addPromotionFilterToMenu() {
             `;
             
             // Insert after the "Parfums de niche" link or before "À propos de nous"
-            const nicheLink = mobileMenuList.querySelector('a[onclick*="filterByCategory(\'niches\')"]');
+            const nicheLink = mobileMenuList.querySelector('a[onclick*="filterByCategory(\'niche\')"]');
             const aboutLink = mobileMenuList.querySelector('a[href="about.html"]');
             
             if (nicheLink) {
@@ -3221,6 +3221,7 @@ function removeFromCart(index) {
 </script>
 </body>
 </html>
+
 
 
 
